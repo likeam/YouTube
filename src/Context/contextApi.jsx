@@ -7,12 +7,16 @@ const AppContext = (props) => {
 
     const [loading, setLoading ] = useState(false);
     const [searchResults , setSearchResults ] = useState(false);
-    const [selectCategories , setSelectCategories ] = useState(false);
+    const [selectCategories , setSelectCategories ] = useState(games);
     const [mobileLoadMeanu , setMbileLoadMeanu ] = useState(false);
 
 
-    const featchSelectedCategoriesData = () => {
-
+    const featchSelectedCategoriesData = (query) => {
+        setLoading(true)
+        fetchDataFromApi(`search/?q=${query}`).then((res) => {
+            console.log(res);
+            
+        })
     }
 
 
