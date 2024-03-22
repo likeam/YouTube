@@ -7,7 +7,7 @@ const AppContext = (props) => {
 
     const [loading, setLoading ] = useState(false);
     const [searchResults , setSearchResults ] = useState(false);
-    const [selectCategories , setSelectCategories ] = useState(games);
+    const [selectCategories , setSelectCategories ] = useState("New");
     const [mobileLoadMeanu , setMbileLoadMeanu ] = useState(false);
 
 
@@ -15,6 +15,8 @@ const AppContext = (props) => {
         setLoading(true)
         fetchDataFromApi(`search/?q=${query}`).then((res) => {
             console.log(res);
+            setSearchResults(res);
+            setLoading(false);
             
         })
     }
