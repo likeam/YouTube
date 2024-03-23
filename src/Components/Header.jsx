@@ -12,7 +12,7 @@ import { FiBell } from "react-icons/fi";
 
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
-
+ 
   const myContext = useContext(Context);
   const { loading, mobileLoadMeanu, setMbileLoadMeanu } = myContext;
 
@@ -53,7 +53,7 @@ const Header = () => {
           <img src={YTMLogo} alt="YTMObile" className="h-full ml-2 md:hidden" />
         </Link>
       </div>
-      <div className="group flex items-center">
+      <div className="group flex justify-end">
         <div className="flex h-8 md:h-10 md:pl-5 border border-[#303030] rounded-xl gorup-focus-within:border-blue-500 md:group-focus-within:pl-0">
           <div className="w-10 items-center justify-center hidden group-focus-within:md:flex">
             <IoIosSearch className="text-white text-xl" />
