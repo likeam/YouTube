@@ -16,7 +16,7 @@ const LeftNav = () => {
             );
         })
         }
-      
+      </div>
     </div>
   )
 }
