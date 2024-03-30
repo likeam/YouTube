@@ -1,5 +1,5 @@
 import React  from 'react'
-import { categories } from "../Utils/Constants"
+  import { categories } from "../Utils/Constants"
 import LeftNavMenuItems from "./LeftNavMenuItems"
 import { Navigate } from 'react-router-dom'
 
@@ -16,7 +16,6 @@ const LeftNav = () => {
             );
         })
         }
-      </div>
       
     </div>
   )
